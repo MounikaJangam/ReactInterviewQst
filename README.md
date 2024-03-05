@@ -67,7 +67,8 @@ Developer tools- for debugging.
 
 5. Explain the difference between state and props in React.js?
 ------------------------------------------------------------------------
--> State is an internal data storage of a component that can be modified throughout the component's lifecycle. 
+-> State is an internal data storage of a component that can be modified throughout the component's lifecycle.
+-> State will managed within a component and can be changed over time using `setState` (or `useState` in functional components).  
 -> It is mutable and managed within the component itself.
 -> Props (short for properties) are read-only data that are passed from parent to child components. 
 -> They allow the parent component to communicate with its children.
@@ -117,7 +118,71 @@ Functional components and class components are the two main types of components 
 -> State can be managed using the useState hook in functional components or by extending the Component class and using setState in class components.
 -> By using useReducer also we can manage the state
 -> If we need a global state solution, the most popular ones are Redux, MobX and built-in Context API, it will depends on the size of the project.
-=========================================================================================
+
+15. What is the significance of props in React?
+---------------------------------------------------------------------
+-> Props (short for properties)  are used to pass data from parent component to child components in React.
+
+16. What is the purpose of the `key` prop in React?
+--------------------------------------------------------------------
+-> React hooks are functions that allow functional component to use state and other React features without needing to write a class component.
+
+17. What are some commonly used React hooks?
+-------------------------------------------------------------------
+-> useState, useEffect, useContext, and useCallback are some commonly used  React hooks.
+
+18. What is the purpose of the useEffect hook?
+-------------------------------------------------------------------
+-> The useEffect hook is used to perform side effects in functional component, such as fetching data from an API or subscribing to events.
+
+19. What is the useContext hook used for?
+------------------------------------------------------------------
+-> The useContext hook is used to access context in functional components, allowing you to avoid prop drilling.
+
+20. What is prop drilling?
+----------------------------------------------------------------
+-> Prop drilling occurs when you need to pass props through multiple layers of components in order to reach a deeply nested child component.
+
+21. What is Redux?
+----------------------------------------------------------------
+-> Redux is a state management library for JavaScript applications, commonly used with React. It provides a predictable state container and helps manage application state in a centralized way.
+
+22. What problem does Redux solve?
+----------------------------------------------------------------
+-> Redux solve the problem of complex state management by providing a centrialzed store where all application state is stored, making it easier to manage and update.
+
+23. How does Redux work with React?
+---------------------------------------------------------------
+-> Redux work with React by providing a `Provider` component to pass the Redux store down the component tree, and by using the `connect` function to connect React components to the Redux store.
+
+24. What are reducers in Redux?
+--------------------------------------------------------------
+-> Reducers are pure functions that specify how the application's state changes in response to actions. They take the current state and an action as input and return a new state.
+
+25. What is the purpose of `render` method in React?
+-------------------------------------------------------------
+-> The ` render` method is used to render the component's UI based on its current props and state. It returns a desciption of what the UI should look like.
+
+26. What is the purpose of the `constructor` method in React class components?
+-------------------------------------------------------------
+-> The `constructor` method is used to initialize the component's state bind event handlers. It is called before the component is mounted.
+
+27. What is the significance of the `super()` method in a React constructor?
+--------------------------------------------------------------
+-> The `super()` method is used to call the constructor of the parent class(i.e., `React.Component`), allowing the coponent to inherit its functionality.
+
+28. What is the purpose of the `componentDidMount` lifecycle method?
+--------------------------------------------------------------
+-> The `componentDidMount` method is called after the component has been mounted to the DOM. It is commonly used to perform initialization tasks, such as fetching data from an API.
+
+29. How do you handle events in React?
+------------------------------------------------------------
+-> Events in React are handled using event handlers, which are fuctions that are called when a specified event occurs, such as a button click or input change.
+
+30. What is the difference between controlled and uncontrolled components?
+-------------------------------------------------------------
+-> To create a controlled component, you set its value attribute to the state value and provide an onChange event handler to update the state when the value changes.
+
 API Based Questions
 =========================================================================================
 
