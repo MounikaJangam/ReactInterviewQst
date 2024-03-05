@@ -83,7 +83,7 @@ Developer tools- for debugging.<br />
 
 7. What are the different types of components in React?
 -----------------------------------------------------------------------
-Functional components and class components are the two main types of components in React.
+-> Functional components and class components are the two main types of components in React.
 
 8. What is the difference between functional components and class components?
 -----------------------------------------------------------------------
