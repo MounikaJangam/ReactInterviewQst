@@ -41,7 +41,7 @@
 39. What are the different lifecycle methods in React.js?
 40. How do you handle state management in large-scale React.js applications?
 ======================================================
-
+<br />
 
 1. What is React.js?
 --------------------------------------
@@ -49,12 +49,12 @@
 
 2. What are the key features of React.js?
 --------------------------------------
-Virtual DOM- for improved performance.
-JSX- for writing HTML within JavaScript.
-Component based- architecture for reusability and maintainability.
-Unidirectional- data flow.
-React Native- for building mobile applications.
-Developer tools- for debugging.
+Virtual DOM- for improved performance.<br />
+JSX- for writing HTML within JavaScript.<br />
+Component based- architecture for reusability and maintainability.<br />
+Unidirectional- data flow.<br />
+React Native- for building mobile applications.<br />
+Developer tools- for debugging.<br />
 
 3. What is JSX in React.js?
 -> JSX stands for JavaScript XML. 
