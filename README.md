@@ -40,7 +40,7 @@
 38. What are portals in React.js?
 39. What are the different lifecycle methods in React.js?
 40. How do you handle state management in large-scale React.js applications?
-======================================================
+=====================================================================================
 <br />
 
 1. What is React.js?
