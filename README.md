@@ -40,10 +40,10 @@
 38. What are portals in React.js?
 39. What are the different lifecycle methods in React.js?
 40. How do you handle state management in large-scale React.js applications?
-========================================================================================================
+======================================================
 1. What is React.js?
 --------------------------------------
-React.js is an open-source JavaScript library developed by Facebook for building user interfaces, specifically for single-page applications.
+-> React.js is an open-source JavaScript library developed by Facebook for building user interfaces, specifically for single-page applications.
 
 2. What are the key features of React.js?
 --------------------------------------
