@@ -173,36 +173,113 @@ Functional components and class components are the two main types of components 
 
 28. What is the purpose of the `componentDidMount` lifecycle method?
 --------------------------------------------------------------
--> The `componentDidMount` method is called after the component has been mounted to the DOM. It is commonly used to perform initialization tasks, such as fetching data from an API.
+-> The `componentDidMount` method is called after the component has been mounted to the DOM. 
+-> It is commonly used to perform initialization tasks, such as fetching data from an API.
 
-29. How do you handle events in React?
+29. What is the purpose of the `componentDidUpdate` lifecycle method?
+--------------------------------------------------------------
+-> The `shouldComponentUpdate` method is called before a component is re-rendered. 
+-> It allows you to control whether the component should update based on changes in props or state.
+
+30. What is the purpose of the `componentWillUnmount` lifecycle method?
+--------------------------------------------------------------
+-> The `componentWillUnmount` method is called before a component is unmounted from the DOM. 
+-> It is commonly used to perform cleanup tasks, such as unsubscribing from event listeners.
+
+31. How do you handle events in React?
 ------------------------------------------------------------
 -> Events in React are handled using event handlers, which are fuctions that are called when a specified event occurs, such as a button click or input change.
 
-30. What is the difference between controlled and uncontrolled components?
+32. What is the difference between controlled and uncontrolled components?
+-------------------------------------------------------------
+-> Controlled components are components whose state is controlled by React, while uncontrolled components maintain their own state internally.
+
+33. How do you create a controlled component in React?
 -------------------------------------------------------------
 -> To create a controlled component, you set its value attribute to the state value and provide an onChange event handler to update the state when the value changes.
+
+34. What are the keys in React and why are they important?
+------------------------------------------------------------
+-> Keys are special attributes used by React to identify each element in a list. 
+-> They help React identify which items have changed, been added, or been removed, improving performance when updating list.
+
+35. What is the purpose of the `setState` method in React?
+-----------------------------------------------------------
+-> The `setState` method is used to update a component's state. It takes an object containing thr updated state or a function that returns the updated state.
+
+36. What are the higher-order components (HOCs) in React?
+-----------------------------------------------------------
+-> Higher-order components are functions that takes a component as input and returns a new component with enhanced functionality.
+-> They use for code reuse and cross-cutting concerns.
+
+37. How do you update state based on the previous state in React?
+-----------------------------------------------------------
+-> To update state based on previous state, you can pass a function to the `setState` method that receives the previous state as an argument.
+
+38. What is the purpose of the `React.Fragment` component?
+----------------------------------------------------------
+-> The `React.Fragment` component is used to group multiple elements without adding an extra DOM node. 
+-> It is useful when you need to return multiple elements from a component's render method.
+
+39. How do you handle froms in React?
+----------------------------------------------------------
+-> Forms in React are typically handled using controlled components, where the from elements (e.g., input, textarea) are controlled by React state.
+
+40. What is the purpose of the `React.memo` function?
+---------------------------------------------------------
+-> The `React.memo` function is used to memorize a functional component, preventing unnecessary re-renders when its props have not changed.
+
+41. What are portals in React?
+----------------------------------------------------------
+-> Portals allows you to render children components outside of their parent DOM hierarchy, typically used for modals, tooltips, and other overlays.
+
+42. What is the purpose of the `keyExtractor` function in React Native?
+-------------------------------------------------------------
+-> The `keyExtractor` function is used to specify how to extract a unique key from each item in a flat list in React Native, similar to the `key` prop in React.
+
+43. What is the significance of the `useReducer` hook in React?
+--------------------------------------------------------------
+-> The `useReducer` hook is an alternative to `useState` for managing complex state logic. 
+-> It is based on the reducer pattern from Redux and allows you to update state based on actions.
+
 
 API Based Questions
 =========================================================================================
 
 1. How do you fetch data from an API in a React component?
-Answer: In React, you can fetch data from an API using various methods, such as the fetch API, Axios, or libraries like axios or fetch. Typically, you would perform the API call in a lifecycle method like componentDidMount (for class components) or using hooks like useEffect (for functional components).
+-----------------------------------------------------------------
+-> In React, you can fetch data from an API using various methods, such as the fetch API, Axios, or libraries like axios or fetch. 
+-> Typically, you would perform the API call in a lifecycle method like componentDidMount (for class components) or using hooks like useEffect (for functional components).
 
 2. What is the purpose of using setState or useState when fetching data from an API?
-Answer: In React, setState (for class components) or useState (for functional components) is used to update the component's state with the fetched data. This triggers a re-render of the component with the updated data, ensuring that the UI reflects the latest state of the application.
+----------------------------------------------------------------
+-> In React, setState (for class components) or useState (for functional components) is used to update the component's state with the fetched data. 
+-> This triggers a re-render of the component with the updated data, ensuring that the UI reflects the latest state of the application.
 
 3. How do you handle errors when fetching data from an API?
-Answer: Errors can be handled by using the catch method for promises (in the case of fetch API) or by providing an error handler function in Axios. Typically, you would update the component's state to indicate an error occurred and display an error message to the user.
+---------------------------------------------------------------
+-> Errors can be handled by using the catch method for promises (in the case of fetch API) or by providing an error handler function in Axios.
+-> Typically, you would update the component's state to indicate an error occurred and display an error message to the user.
 
 4. What is the purpose of the useEffect hook in React?
-Answer: The useEffect hook in React is used to perform side effects in functional components. This includes data fetching, subscriptions, or manually changing the DOM. It is often used for fetching data from APIs in functional components, similar to componentDidMount and componentDidUpdate in class components.
+---------------------------------------------------------------
+-> The useEffect hook in React is used to perform side effects in functional components. 
+-> This includes data fetching, subscriptions, or manually changing the DOM. 
+-> It is often used for fetching data from APIs in functional components, similar to componentDidMount and componentDidUpdate in class components.
 
 5. How do you handle asynchronous code when fetching data from an API in React?
-Answer: Asynchronous code when fetching data from an API can be handled using async/await with the fetch API or Axios, or by chaining promises with .then() and .catch(). Alternatively, you can use libraries like react-query or axios with promise-based syntax to simplify asynchronous code handling in React components.
+------------------------------------------------------------------
+-> Asynchronous code when fetching data from an API can be handled using async/await with the fetch API or Axios, or by chaining promises with .then() and .catch(). 
+-> Alternatively, you can use libraries like react-query or axios with promise-based syntax to simplify asynchronous code handling in React components.
 
 6. What is CORS, and how do you handle CORS-related issues when working with APIs in React?
-Answer: CORS (Cross-Origin Resource Sharing) is a security mechanism that restricts web pages from making requests to APIs hosted on different domains. In React, CORS issues are typically handled on the server-side by configuring the API server to allow requests from specific origins (domains). Additionally, you can use proxy servers or CORS-anywhere services during development to bypass CORS restrictions.
+------------------------------------------------------------------
+-> CORS (Cross-Origin Resource Sharing) is a security mechanism that restricts web pages from making requests to APIs hosted on different domains. 
+-> In React, CORS issues are typically handled on the server-side by configuring the API server to allow requests from specific origins (domains). 
+-> Additionally, you can use proxy servers or CORS-anywhere services during development to bypass CORS restrictions.
 
 7. Explain the concept of API pagination and how you would implement it in a React application.
-Answer: API pagination involves splitting large sets of data into smaller chunks (pages) to improve performance and reduce server load. In React, you can implement pagination by fetching data from the API in smaller batches based on page numbers or cursor-based pagination. You would typically use state to keep track of the current page number or cursor and update it based on user interactions (e.g., clicking on pagination buttons).
+-----------------------------------------------------------------
+-> API pagination involves splitting large sets of data into smaller chunks (pages) to improve performance and reduce server load. 
+-> In React, you can implement pagination by fetching data from the API in smaller batches based on page numbers or cursor-based pagination. 
+-> You would typically use state to keep track of the current page number or cursor and update it based on user interactions (e.g., clicking on pagination buttons).
